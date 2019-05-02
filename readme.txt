@@ -2,4 +2,4 @@ Benvolguts a SquareClicker, el projecte d'alumnes de 2n de SMIX sobre un joc cli
 
 Aquest projecte a github serveix per treballar conjuntament el desenvolupament de la idea.
 
-Creado por: Roger Rubio, Arnau Ramos, Miguel Zambrana, Bryan Morales, Francisco Rossi, Jose Bueno, Miquel Blasco 2 : La Venganza
+Creado por: Arnau Ramos, Roger Rubio, Miguel Zambrana, Bryan Morales, Francisco Rossi, Jose Bueno, Miquel Blasco
