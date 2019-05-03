@@ -5,4 +5,8 @@ Aquest projecte a github serveix per treballar conjuntament el desenvolupament d
 Creado por: Miguel Zambrana, Arnau Ramos, Roger Rubio, Bryan Morales, Francisco Rossi, Jose Bueno, Miquel Blasco
 
 Arnau Ramos test
+Miquel Blasco testo-des
 Jose Bueno test
+Bryan Morales YTS
+Francisco Rossi test
+Roger Rubio test
