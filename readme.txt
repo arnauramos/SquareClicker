@@ -6,3 +6,4 @@ Creado por: Miguel Zambrana, Arnau Ramos, Roger Rubio, Bryan Morales, Francisco 
 
 Arnau Ramos test
 Jose Bueno test
+Bryan Morales
