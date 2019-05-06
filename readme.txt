@@ -10,3 +10,5 @@ Jose Bueno test
 Bryan Morales YTS
 Francisco Rossi test
 Roger Rubio test
+
+Farem un cuadart negre al mig de la pantalla hi quan el cliques et donen 1 punt.
