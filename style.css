@@ -18,7 +18,7 @@ div#punts{
   border: 5px solid black;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0px 0px 5px 1px red;
+  box-shadow: 0px 0px 5px 1px white;
   color: black;
   justify-content: center;
   align-items: center;
@@ -35,30 +35,29 @@ div#punts{
   width:200px;
   height: 200px;
   border: 5px solid black;
-  box-shadow: 0px 0px 5px 1px red;
+  box-shadow: 0px 0px 5px 1px white;
   background-color: red;
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 #rango{
   display: block;
   position: absolute;
   background-color: transparent;
-  top: 50px;
-  left: 20px;
-  width: 1320px;
-  height: 500px;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  height: 75%;
   transform: translate(-50,-50);
 }
 
 button#ranquing{
   display: block;
-  position: relative;
-  width: 100px;
+  position: absolute;
+  width: 150px;
   height: 50px;
   left: 90%;
-  top: 5px;
+  top: 6%;
   background-color: black;
   border-radius: 10px;
   border: white;
@@ -68,17 +67,18 @@ button#ranquing{
 }
 
 button#ranquing:hover{
-  color: red;
+  font-weight: 600;
+  font-size: 1rem;
   transition: all 200ms ease;
 }
 
 button#enviar{
   display: block;
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 50px;
-  left: 90%;
-  top: 520px;
+  left: 92%;
+  top: 92%;
   border-radius: 10px;
   background-color: #018206;
   border: white;
@@ -88,6 +88,7 @@ button#enviar{
 }
 
 button#enviar:hover{
-  color: red;
+  font-weight: 600;
+  font-size: 1rem;
   transition: all 200ms ease;
 }
