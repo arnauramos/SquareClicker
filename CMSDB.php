@@ -14,8 +14,9 @@ $missatge1 = "<span style='color:#4CAF50;'>Status Servidor</span>&nbsp;&xrarr; C
 
 $sql = "CREATE DATABASE squareclickerbd";
 if ($conn->query($sql) === TRUE) {
-    $missatge2 = "<span style='color:#4CAF50;'>Status Dbase</span>&nbsp;&xrarr; La Base de dades s'ha creat.";}
-  else{
+    $missatge2 = "<span style='color:#4CAF50;'>Status Dbase</span>&nbsp;&xrarr; La Base de dades s'ha creat.";
+  }  else{
+
     $missatge2 = "<span style='color:#4CAF50;'>Status Dbase</span>&nbsp;&xrarr; ". $conn->error;
 
       $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
       $sql = "CREATE TABLE squareclickertb (
       id INT(100) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       usuari VARCHAR(100) NOT NULL,
-      puntuació INT(200) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      puntuació VARCHAR(200) 
       )";
 
       if ($conn->query($sql) === TRUE) {
