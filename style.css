@@ -1,21 +1,55 @@
-*{margin:0; padding: 0;}
-
-#nom{
-
+body, *{margin:0; padding:0;  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;}
+body{
+  background-color: lightblue;
+}
+div#punts{
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 10%;
+  width:200px;
+  height: 75px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px red;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family:monospace;
 }
 
 #quadrat{
   display: block;
-  position: relative;
-  width: 60px;
-  height: 60px;
+  position: absolute;
+  transform: translate(-50%, -50%);
   left: 50%;
-  top: 250px;
-  background-color: black;
+  top: 50%;
+  width:200px;
+  height: 200px;
+  border: 5px solid black;
+  box-shadow: 0px 0px 5px 1px red;
+  background-color: red;
+  cursor: pointer;
 }
 
-#punts{
-
+<<<<<<< HEAD
+#rango{
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: 50px;
+  left: 20px;
+  width: 1320px;
+  height: 500px;
+  transform: translate(-50,-50);
 }
 
 button#ranquing{
@@ -23,10 +57,12 @@ button#ranquing{
   position: relative;
   width: 100px;
   height: 50px;
-  left: 85%;
+  left: 90%;
   top: 5px;
   background-color: black;
   border-radius: 10px;
+  border: white;
+  box-shadow: 0px 0px 5px 1px white;
   cursor: pointer;
   color: white;
 }
@@ -41,10 +77,17 @@ button#enviar{
   position: relative;
   width: 100px;
   height: 50px;
-  left: 60%;
-  top: 400px;
+  left: 90%;
+  top: 520px;
   border-radius: 10px;
-  background-color: black;
+  background-color: #018206;
+  border: white;
+  box-shadow: 0px 0px 5px 1px white;
   cursor: pointer;
   color: white;
+}
+
+button#enviar:hover{
+  color: red;
+  transition: all 200ms ease;
 }
