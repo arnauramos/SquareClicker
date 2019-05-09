@@ -104,3 +104,19 @@ button#enviar:hover{
   font-size: 1rem;
   transition: all 200ms ease;
 }
+
+div#x2{
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 20%;
+  top: 10%;
+  width:100px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
