@@ -1,6 +1,13 @@
 /* SquareClicker's function.js*/
 var punts = 0;
-
+var multiplicador = 1;
+/*Incrementar punts click segons multiplicador */
+function clickx2(){
+  punts = punts - multiplicador * 10;
+  document.getElementById('punts').innerHTML = punts;
+  document.getElementById("x2").style.display = "none";
+  multiplicador = multiplicador + 1;
+}
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
@@ -13,12 +20,13 @@ function getRandomColor() {
 
 function clickquadrat() {
   var randomesquerra =  Math.floor((Math.random() * 80) + 1);
-  var randomalçada =  Math.floor((Math.random() * 50) + 1);
-  var amplada = 200 - parseInt( punts, 10 ) + "px";
-  var alçada = 200 - parseInt( punts, 10 ) + "px";
+  var randomtop =  Math.floor((Math.random() * 50) + 1);
+  var randomtamany =  Math.floor((Math.random() * 300) + 1);
+  var amplada = parseInt( randomtamany, 10 ) + "px";
+  var alçada = parseInt( randomtamany, 10 ) + "px";
   var esquerra = parseInt( randomesquerra, 10 ) + 10 + "%";
-  var top = parseInt( randomalçada, 10 ) + 30 + "%";
-  punts = punts + 1;
+  var top = parseInt( randomtop, 10 ) + 30 + "%";
+  punts = punts + multiplicador;
   document.getElementById('punts').innerHTML = punts;
   document.getElementById("quadrat").style.backgroundColor = getRandomColor();
   document.getElementById("body").style.backgroundColor = getRandomColor();
@@ -26,8 +34,8 @@ function clickquadrat() {
   document.getElementById("quadrat").style.height = alçada;
   document.getElementById("quadrat").style.left = esquerra;
   document.getElementById("quadrat").style.top = top;
-  if (punts == 200) {
-    document.getElementById("quadrat").style.display = "none";
-    alert("Ben Jugat");
+  if (punts >= multiplicador * 10) {
+    document.getElementById("x2").innerHTML = - multiplicador * 10;
+    document.getElementById("x2").style.display = "flex";
   }
 }
