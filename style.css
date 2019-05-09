@@ -1,0 +1,50 @@
+*{margin:0; padding: 0;}
+
+#nom{
+
+}
+
+#quadrat{
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  top: 250px;
+  background-color: black;
+}
+
+#punts{
+
+}
+
+button#ranquing{
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  left: 85%;
+  top: 5px;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+button#ranquing:hover{
+  color: red;
+  transition: all 200ms ease;
+}
+
+button#enviar{
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  left: 60%;
+  top: 400px;
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}

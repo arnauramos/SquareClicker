@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>SQUARE CLICKER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body id="body">
+  <div id="rango">
+  <div id="quadrat" onclick="clickquadrat()"></div>
+</div>
+  <div id="punts">0</div>
+  <div id="nom"></div>
+  <button id="ranquing">Ranquing</button>
+  <button id="enviar">Enviar</button>
+</body>
+</html>
