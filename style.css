@@ -73,6 +73,16 @@ button#ranquing:hover{
   transition: all 200ms ease;
 }
 
+#nom{display: block;
+position: absolute;
+transform: translate(-50%, -50%);
+width: 150px;
+height: 20px;
+left: 92%;
+top: 85%;
+
+}
+
 button#enviar{
   display: block;
   position: absolute;
