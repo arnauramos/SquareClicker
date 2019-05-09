@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
       $sql = "CREATE TABLE squareclickertb (
       id INT(100) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       usuari VARCHAR(100) NOT NULL,
-      puntuació VARCHAR(200) 
+      puntuació VARCHAR(200)
       )";
 
       if ($conn->query($sql) === TRUE) {
