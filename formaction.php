@@ -11,12 +11,13 @@ if ($conn->connect_error) {
    die("Connexio fallida: " . $conn->connect_error);
 }
 
-$formes = htmlspecialchars($_POST[]);
-$formli = $_POST[];
-$formda = $_POST[];
+$formus = htmlspecialchars($_POST['usuari']);
+$formpu = htmlspecialchars($_POST['puntuacio']);
 
-$sql = "INSERT INTO squareclickerbd ()
-VALUES ('$formes', '$formli', '$formda')";
+
+
+$sql = "INSERT INTO squareclickerdb (usuari, puntuacio)
+VALUES ('$formus', '$formpu')";
 
 if ($conn->query($sql) === TRUE) {
    $missatge04 = "Has enviat la teva puntuació";
@@ -26,7 +27,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-<!DOCTYPE html>
 <html lang="ca">
 <head>
   <meta charset="utf-8" />
@@ -36,7 +36,7 @@ $conn->close();
 <body>
   <div id="page-wrap">
     <?php echo $missatge04 ?>
-    <input type="button" value="NOVA PARTIDA" onclick="window.open('index.html','_self')"/>
+    <input type="button" value="NOVA PARTIDA" onclick="window.open('index.php','_self')"/>
   </div>
 </body>
 </html>
