@@ -133,8 +133,25 @@ div#x2{
 
 input#button2{
   display: block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background: red;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50vw;
+  z-index: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 10px 20px;
+  min-width: 50px;
+  min-height: 50px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #fdfdfd;
+  outline: none;
+  box-shadow: 5px 5px 10px #030303;
+  transition: all 300ms ease;
+  border-radius: 10px;
 }
+
+input#button2:active{box-shadow: 2px 2px 0px #030303;
+top:calc(50% + 3px);
+left:calc(50% + 3px);}
