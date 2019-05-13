@@ -6,7 +6,7 @@ $dbname = "squareclickerdb";
 
 // Tronem a crear la connexió
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Comprovem la connexió 
+// Comprovem la connexió
 if ($conn->connect_error) {
    die("Connexio fallida: " . $conn->connect_error);
 }
@@ -36,7 +36,7 @@ $conn->close();
 <body>
   <div id="page-wrap">
     <?php echo $missatge04 ?>
-    <input type="button" value="NOVA PARTIDA" onclick="window.open('index.php','_self')"/>
+    <input id="button2" type="button" value="NOVA PARTIDA" onclick="window.open('index.php','_self')"/>
   </div>
 </body>
 </html>
