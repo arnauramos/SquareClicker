@@ -25,7 +25,7 @@ div#punts{
   font-size: 3rem;
   font-family:monospace;
 }
- 
+
 #quadrat{
   display: block;
   position: absolute;
@@ -129,4 +129,12 @@ div#x2{
   align-items: center;
   font-size: 1rem;
   cursor: pointer;
+}
+
+input#button2{
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: red;
 }
