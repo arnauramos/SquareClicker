@@ -6,7 +6,7 @@ $dbname = "squareclickerdb";
 
 // Tronem a crear la connexió
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Comprovem la connexió
+// Comprovem la connexió 
 if ($conn->connect_error) {
    die("Connexio fallida: " . $conn->connect_error);
 }

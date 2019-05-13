@@ -2,7 +2,7 @@
 var punts = 0;
 var multiplicador = 1;
 /*Incrementar punts click segons multiplicador */
-function clickx2(){
+function clickx2(){ 
   punts = punts - multiplicador * 10;
   document.getElementById('punts').innerHTML = punts;
   document.getElementById("x2").style.display = "none";

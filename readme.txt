@@ -17,7 +17,7 @@ Farem un cuadrat el qual quant el cliques suma punts, també canvia de posició 
 CMSDB.php
 
 Creació , connexió i mostració de la base de dades , mostra els nomes hi les puntuacions dels ususaris que les hagin enviat.
-
+ 
 formaction.php
 
 Serveix per enviar la teva puntuació hi que despres es mostri en un ranking.
