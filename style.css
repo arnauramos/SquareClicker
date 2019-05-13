@@ -93,7 +93,7 @@ top: 85%;
 
 }
 
-button#enviar{
+#enviar{
   display: block;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -109,7 +109,7 @@ button#enviar{
   color: white;
 }
 
-button#enviar:hover{
+#enviar:hover{
   font-weight: 600;
   font-size: 1rem;
   transition: all 200ms ease;
