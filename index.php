@@ -18,7 +18,7 @@ if ($conn->query($sql) === TRUE) {
   }  else{
 
     $missatge2 = "<span style='color:#4CAF50;'>Status Dbase</span>&nbsp;&xrarr; ". $conn->error;
-
+}
       $conn = new mysqli($servername, $username, $password, $dbname);
 
       $sql = "CREATE TABLE squareclickerdb (
@@ -32,7 +32,7 @@ if ($conn->query($sql) === TRUE) {
       } else {
           $missatge3 = "<span style='color:#4CAF50;'>Status Taula</span>&nbsp;&xrarr; ". $conn->error;
     }
-  }
+
 
   $sql = "SELECT * from squareclickerdb";
   $result = mysqli_query($conn, $sql);
@@ -51,12 +51,13 @@ if ($conn->query($sql) === TRUE) {
   <div id="rango">
   <div id="quadrat" onclick="clickquadrat()"></div>
 </div>
-  <div id="punts">0</div>
+
 
   <div id="x2" onclick="clickx2()"></div>
   <button id="ranquing">RANQUING</button>
   <form action="formaction.php" method="post">
-    <input name="squareclickertb" id="squareclickertb" type="text" maxlength="30" />
+      <div name="puntuacio" id="punts">0</div>
+    <input name="usuari" id="usuari" type="text" maxlength="30" />
     <input type="submit" value="enviar" />
   </form>
   <div class="post">
