@@ -1,7 +1,8 @@
+
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root"; 
+$password = "root";
 $dbname = "squareclickerdb";
 
 // Tronem a crear la connexió
@@ -11,22 +12,26 @@ if ($conn->connect_error) {
    die("Connexio fallida: " . $conn->connect_error);
 }
 
+// Agafa el nom hi la puntuació dels usuaris
 $formus = htmlspecialchars($_POST['usuari']);
 $formpu = htmlspecialchars($_POST['puntuacio']);
 
-
-
+// Les inserta en la taula de la base de dades
 $sql = "INSERT INTO squareclickerdb (usuari, puntuacio)
 VALUES ('$formus', '$formpu')";
 
+// Comprova que ha enviat la puntuació correctament
 if ($conn->query($sql) === TRUE) {
    $missatge04 = "Has enviat la teva puntuació";
 } else {
    $missatge04 = "Error: " . $sql . "<br>" . $conn->error;
 }
 
+// Tanca connexió
 $conn->close();
 ?>
+
+<!--// Document -->
 <html lang="ca">
 <head>
   <meta charset="utf-8" />
