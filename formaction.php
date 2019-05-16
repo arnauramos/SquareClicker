@@ -31,7 +31,7 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 ?>
 
-<!--// Document -->
+<!--// Document html per començar una nova partida -->
 <html lang="ca">
 <head>
   <meta charset="utf-8" />
@@ -40,7 +40,9 @@ $conn->close();
 </head>
 <body>
   <div id="page-wrap">
+    <!--Et comunica que la teva puntuació s'ha enviat correctament -->
     <?php echo $missatge04 ?>
+    <!-- Comença una nova partida-->
     <input id="button2" type="button" value="NOVA PARTIDA" onclick="window.open('index.php','_self')"/>
   </div>
 </body>
