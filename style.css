@@ -131,6 +131,7 @@ div#x2{
   font-size: 1rem;
   color: red;
   cursor: pointer;
+  box-shadow: 0px 0px 5px 1px white;
 }
 
 input#button2{
