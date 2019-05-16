@@ -2,9 +2,9 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "squareclickerdb";
- 
+
 
 $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {

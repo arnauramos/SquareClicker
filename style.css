@@ -123,11 +123,13 @@ div#x2{
   top: 10%;
   width:100px;
   height: 20px;
-  border: 2px solid black;
+  border: 5px solid black;
+  border-radius: 20px;
   background-color: white;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  color: red;
   cursor: pointer;
 }
 
