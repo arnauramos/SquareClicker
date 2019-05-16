@@ -13,23 +13,3 @@ Roger Rubio test
 Miguel Zambrana test
 
 Farem un cuadrat el qual quant el cliques suma punts, també canvia de posició i color, quans més punts acumules més petit es fa el quadrat , els jugadors poden enviar la puntuació aconseguida a un ranking.
-
-CMSDB.php
-
-Creació , connexió i mostració de la base de dades , mostra els nomes hi les puntuacions dels ususaris que les hagin enviat.
- 
-formaction.php
-
-Serveix per enviar la teva puntuació hi que despres es mostri en un ranking.
-
-index.html
-
-On es defineixen els objects del projecte.
-
-style.css
-
-on es defineix la forma dels objectes.
-
-functions.js
-
-On es defineixen les funcions hi variables que es fan servir per a tal de que el quadrat
