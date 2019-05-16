@@ -57,7 +57,7 @@ if ($conn->query($sql) === TRUE) {
   <button id="ranquing">RANQUING</button>
   <form action="formaction.php" method="post">
       <div name="puntuacio" id="punts">0</div>
-    <input name="usuari" id="nom" type="text" maxlength="30" />
+    <input name="usuari" id="nom" name="nom" placeholder="Escriu el teu nom" type="text" maxlength="30" />
     <input id="enviar" type="submit" value="enviar" />
   </form>
   <div class="post">
