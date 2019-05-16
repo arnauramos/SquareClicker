@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "root"; 
 $dbname = "squareclickerdb";
 
 // Tronem a crear la connexió
