@@ -64,22 +64,33 @@ div#punts{
 button#ranquing{
   display: block;
   position: absolute;
-  width: 150px;
-  height: 50px;
-  left: 90%;
-  top: 6%;
-  background-color: black;
-  border-radius: 10px;
-  border: white;
-  box-shadow: 0px 0px 5px 1px white;
-  cursor: pointer;
-  color: white;
   transform: translate(-50%, -50%);
+  top: 8%;
+  font-family: monospace;
+  left: 92%;
+  z-index: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 10px 20px;
+  min-width: 120px;
+  min-height: 50px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #fdfdfd;
+  outline: none;
+  box-shadow: 2px 5px 20px 5px #030303;
+  transition: all 300ms ease;
+  border-radius: 10px;
 }
 
 button#ranquing:hover{
-  font-weight: 600;
-  font-size: 1rem;
+  background-color: cyan;
+}
+
+button#ranquing:active{
+  top:calc(8% + 3px);
+  left:calc(92% + 3px);
+  box-shadow: 2px 2px 0px #030303;
   transition: all 200ms ease;
 }
 
@@ -89,7 +100,11 @@ transform: translate(-50%, -50%);
 width: 150px;
 height: 20px;
 left: 92%;
-top: 85%;
+top: 83%;
+border: 1px solid black;
+box-shadow: 1px 1px 5px 1px;
+border-radius: 5px;
+font-family: monospace;
 
 }
 
@@ -97,21 +112,28 @@ top: 85%;
   display: block;
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 50px;
-  left: 92%;
   top: 92%;
-  border-radius: 10px;
-  background-color: #018206;
-  border: white;
-  box-shadow: 0px 0px 5px 1px white;
+  font-family: monospace;
+  left: 92%;
+  z-index: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 10px 20px;
+  min-width: 120px;
+  min-height: 50px;
   cursor: pointer;
-  color: white;
+  border: 1px solid black;
+  background-color: #fdfdfd;
+  outline: none;
+  box-shadow: 2px 5px 20px 5px #030303;
+  transition: all 300ms ease;
+  border-radius: 10px;
 }
 
-#enviar:hover{
-  font-weight: 600;
-  font-size: 1rem;
+#enviar:active{
+  top:calc(92% + 3px);
+  left:calc(92% + 3px);
+  box-shadow: 2px 2px 0px #030303;
   transition: all 200ms ease;
 }
 
@@ -153,6 +175,7 @@ input#button2{
   box-shadow: 5px 5px 10px #030303;
   transition: all 300ms ease;
   border-radius: 10px;
+  font-family: monospace;
 }
 
 input#button2:active{box-shadow: 2px 2px 0px #030303;
