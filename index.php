@@ -61,7 +61,7 @@ if ($conn->query($sql) === TRUE) {
     <input name="usuari" id="nom" name="nom" placeholder="Escriu el teu nom" type="text" maxlength="30" />
     <input id="enviar" type="submit" value="enviar" />
   </form>
-  <div class="post">
+  <div id="postmissatges" class="post">
     <p><?php echo $missatge1 ?></p>
     <p><?php echo $missatge2 ?></p>
     <p><?php echo $missatge3 ?></p>

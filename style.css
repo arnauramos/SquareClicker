@@ -184,3 +184,9 @@ input#button2{
 input#button2:active{box-shadow: 2px 2px 0px #030303;
 top:calc(50% + 3px);
 left:calc(50% + 3px);}
+
+div#postmissatges{
+  display: block;
+  position: absolute;
+  bottom: 0%;
+}
