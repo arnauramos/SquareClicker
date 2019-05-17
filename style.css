@@ -25,6 +25,9 @@ div#punts{
   font-size: 3rem;
   font-family:monospace;
 }
+input#puntuacio{
+  display: none;
+}
 
 #quadrat{
   display: block;

@@ -2,7 +2,7 @@
 var punts = 0;
 var multiplicador = 1;
 /*Incrementar punts click segons multiplicador */
-function clickx2(){ 
+function clickx2(){
   punts = punts - multiplicador * 10;
   document.getElementById('punts').innerHTML = punts;
   document.getElementById("x2").style.display = "none";
@@ -28,6 +28,7 @@ function clickquadrat() {
   var top = parseInt( randomtop, 10 ) + 30 + "%";
   punts = punts + multiplicador;
   document.getElementById('punts').innerHTML = punts;
+  document.getElementById('puntuacio').value = punts;
   document.getElementById("quadrat").style.backgroundColor = getRandomColor();
   document.getElementById("body").style.backgroundColor = getRandomColor();
   document.getElementById("quadrat").style.width = amplada;
@@ -38,4 +39,5 @@ function clickquadrat() {
     document.getElementById("x2").innerHTML = - multiplicador * 10;
     document.getElementById("x2").style.display = "flex";
   }
+  console.log(punts);
 }

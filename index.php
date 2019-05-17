@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
       $sql = "CREATE TABLE squareclickerdb (
       id INT(100) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       usuari VARCHAR(100) NOT NULL,
-      puntuacio VARCHAR(200)
+      puntuacio INT(200)
       )";
 
       if ($conn->query($sql) === TRUE) {
@@ -55,8 +55,9 @@ if ($conn->query($sql) === TRUE) {
 
   <div id="x2" onclick="clickx2()"></div>
   <button id="ranquing">RANQUING</button>
+  <div id="punts">0</div>
   <form action="formaction.php" method="post">
-      <div name="puntuacio" id="punts">0</div>
+    <input name="puntuacio" id="puntuacio" type="number" />
     <input name="usuari" id="nom" name="nom" placeholder="Escriu el teu nom" type="text" maxlength="30" />
     <input id="enviar" type="submit" value="enviar" />
   </form>
@@ -64,8 +65,6 @@ if ($conn->query($sql) === TRUE) {
     <p><?php echo $missatge1 ?></p>
     <p><?php echo $missatge2 ?></p>
     <p><?php echo $missatge3 ?></p>
-    <p><?php echo $missatge4 ?></p>
-
   </div>
 </body>
 </html>

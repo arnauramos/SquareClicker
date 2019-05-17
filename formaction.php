@@ -12,7 +12,7 @@ if ($conn->connect_error) {
    die("Connexio fallida: " . $conn->connect_error);
 }
 
-// Agafa el nom hi la puntuació dels usuaris
+// Agafa el nom i la puntuació dels usuaris
 $formus = htmlspecialchars($_POST['usuari']);
 $formpu = htmlspecialchars($_POST['puntuacio']);
 
