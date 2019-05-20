@@ -5,6 +5,7 @@ var multiplicador = 1;
 function clickx2(){
   punts = punts - multiplicador * 10;
   document.getElementById('punts').innerHTML = punts;
+  document.getElementById('puntuacio').value = punts;
   document.getElementById("x2").style.display = "none";
   multiplicador = multiplicador + 1;
 }
