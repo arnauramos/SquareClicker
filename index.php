@@ -2,7 +2,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "squareclickerdb";
 
 
@@ -59,7 +59,7 @@ if ($conn->query($sql) === TRUE) {
   <form action="formaction.php" method="post">
     <input name="puntuacio" id="puntuacio" type="number" />
     <input name="usuari" id="nom" name="nom" placeholder="Escriu el teu nom" type="text" maxlength="30" />
-    <input id="enviar" type="submit" value="enviar" />
+    <input id="enviar" type="submit" value="ENVIAR" />
   </form>
   <div id="postmissatges" class="post">
     <p><?php echo $missatge1 ?></p>
