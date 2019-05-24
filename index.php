@@ -54,7 +54,7 @@ if ($conn->query($sql) === TRUE) {
 
 
   <div id="x2" onclick="clickx2()"></div>
-  <button id="ranquing">RANQUING</button>
+  <button id="ranquing" onclick="window.open('ranquing.php','_self')">RANQUING</button>
   <div id="punts">0</div>
   <form action="formaction.php" method="post">
     <input name="puntuacio" id="puntuacio" type="number" />
