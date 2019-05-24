@@ -46,4 +46,5 @@ while($row = mysqli_fetch_array($result)){
 mysqli_close($conn); ?>
 
 </table>
+    <button id="button3" onclick="window.open('index.php','_self')";>NOVA PARTIDA</button>
 </body>

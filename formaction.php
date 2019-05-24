@@ -43,7 +43,8 @@ $conn->close();
     <!--Et comunica que la teva puntuació s'ha enviat correctament -->
     <?php echo $missatge04 ?>
     <!-- Comença una nova partida-->
-    <input id="button2" type="button" value="NOVA PARTIDA" onclick="window.open('index.php','_self')"/>
+    <button id="button2" onclick="window.open('index.php','_self')";>NOVA PARTIDA</button>
+    <button id="ranquing2" onclick="window.open('ranquing.php','_self')">RANQUING</button>
   </div>
 </body>
 </html>
