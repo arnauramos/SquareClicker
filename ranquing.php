@@ -14,7 +14,15 @@ $missatge01 = "connexió establerta";
   //connectar amb la base de dades
   $conn = new mysqli($servername, $username, $password, $dbname);
 ?>
-
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>SQUARE CLICKER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
 <table id="Taula">
 <tr id="titols">
   <td class="id">id</td>
@@ -38,4 +46,4 @@ while($row = mysqli_fetch_array($result)){
 mysqli_close($conn); ?>
 
 </table>
-</div>
+</body>
