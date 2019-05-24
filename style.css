@@ -238,3 +238,12 @@ div#postmissatges{
   position: absolute;
   bottom: 0%;
 }
+
+table#Taula{
+  display: flex;
+  position: relative;
+  font-family: monospace;
+  font-size: 30px;
+  justify-content: center;
+  padding: 20px;
+}
