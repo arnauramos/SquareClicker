@@ -13,6 +13,20 @@ die($missatge01 = "connexió fallida: ".$conn->connect_error);
 $missatge01 = "connexió establerta";
   //connectar amb la base de dades
   $conn = new mysqli($servername, $username, $password, $dbname);
+
+  $sql = "CREATE TABLE squareclickerdb (
+  id INT(100) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  usuari VARCHAR(100) NOT NULL,
+  puntuacio INT(200)
+  )";
+
+  if ($conn->query($sql) === TRUE) {
+  };
+
+
+$sql = "SELECT * from squareclickerdb";
+$result = mysqli_query($conn, $sql);
+
 ?>
 
 <html lang="ca">
@@ -37,7 +51,6 @@ $result = mysqli_query($conn,$sql);
 
 while($row = mysqli_fetch_array($result)){
  ?>
-
 <tr>
   <td class="id"><?php echo $row['id']?></td>
   <td class="usuari"><?php echo $row['usuari']?></td>

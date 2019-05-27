@@ -15,7 +15,7 @@ $missatge01 = "connexió establerta";
   $conn = new mysqli($servername, $username, $password, $dbname);
 ?>
 <?php
-$sql = "DELETE FROM squareclickerdb";
+$sql = "DROP TABLE squareclickerdb";
 if(mysqli_query($conn, $sql)){
     echo "Record was deleted successfully.";
 }
