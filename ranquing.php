@@ -24,6 +24,7 @@ $missatge01 = "connexió establerta";
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
+  //crear la taula de puntuació
 <table id="Taula">
 <tr id="titols">
   <td class="id">id</td>
