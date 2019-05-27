@@ -14,6 +14,7 @@ $missatge01 = "connexió establerta";
   //connectar amb la base de dades
   $conn = new mysqli($servername, $username, $password, $dbname);
 ?>
+
 <html lang="ca">
   <head>
     <meta charset="utf-8">
@@ -47,4 +48,5 @@ mysqli_close($conn); ?>
 
 </table>
     <button id="button3" onclick="window.open('index.php','_self')";>NOVA PARTIDA</button>
+    <button id="esborrar" onclick="window.open('delete.php','_self')";>ESBORRAR RANQUING</button>
 </body>
