@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "squareclickerdb";
 
 //creem connexió
@@ -37,7 +37,7 @@ $result = mysqli_query($conn, $sql);
     <script type="text/javascript" src="functions.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body>
+<body style="background-color:#1F4D22;">
 <!--crear la taula de puntuació-->
 <table id="Taula">
 <tr id="titols">

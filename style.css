@@ -178,15 +178,15 @@ div#x2{
   font-family: monospace;
 }
 #button3{
-  display: block;
+  display: inline-block;
   position: relative;
   transform: translate(-50%, -50%);
   top: 5vh;
-  left: 50vw;
+  left: 43vw;
   z-index: 600;
   font-size: 1rem;
   line-height: 1.25rem;
-  padding: 10px 20px;
+  padding: 10px 40px;
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
@@ -227,7 +227,7 @@ left:calc(40vw + 3px);}
 
 #button3:active{box-shadow: 2px 2px 0px #030303;
 top:calc(5vh + 3px);
-left:calc(50vw + 3px);}
+left:calc(43vw + 3px);}
 
 #ranquing2:active{box-shadow: 2px 2px 0px #030303;
 top:calc(50vh + 3px);
@@ -306,3 +306,28 @@ tr#titols td.puntuacio{
   text-transform: uppercase;
   background-color:
 }
+
+button#esborrar{
+  display: inline-block;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 5vh;
+  left: 45.5vw;
+  z-index: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 10px 20px;
+  min-width: 50px;
+  min-height: 50px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #f24646;
+  outline: none;
+  box-shadow: 5px 5px 10px #030303;
+  transition: all 300ms ease;
+  border-radius: 10px;
+  font-family: monospace;}
+
+  button#esborrar:active{box-shadow: 2px 2px 0px #030303;
+  top:calc(5vh + 3px);
+  left:calc(45.5vw + 3px);}
