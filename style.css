@@ -179,10 +179,10 @@ div#x2{
 }
 #button3{
   display: block;
-  position: absolute;
+  position: relative;
   transform: translate(-50%, -50%);
-  top: 50vh;
-  left: 40vw;
+  top: 5vh;
+  left: 50vw;
   z-index: 600;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -226,8 +226,8 @@ top:calc(50vh + 3px);
 left:calc(40vw + 3px);}
 
 #button3:active{box-shadow: 2px 2px 0px #030303;
-top:calc(50vh + 3px);
-left:calc(40vw + 3px);}
+top:calc(5vh + 3px);
+left:calc(50vw + 3px);}
 
 #ranquing2:active{box-shadow: 2px 2px 0px #030303;
 top:calc(50vh + 3px);
@@ -245,10 +245,64 @@ table#Taula{
   font-family: monospace;
   font-size: 30px;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
 }
 
-td{padding-left: 15px;}
-td{padding-right: 15px;}
-td{padding-top: 5px;}
-td{padding-bottom: 5px;}
+table{
+ display: block;
+ position: relative;
+ border-collapse: collapse;
+ border: none;
+}
+
+td{
+ height: 26px;
+ vertical-align: center;
+ font-size: 1rem;
+ padding: 5px;
+ text-align: center;
+ font-family: monospace;
+ margin-top: 30px;
+ border: 1px solid black;
+ background: #bee5ae;
+ font-weight: normal;
+ color: #1D4A26;
+ transition: 300ms ease;
+ box-shadow: 5px 5px 10px #030303;
+
+}
+
+td.usuari{
+ width: 100%;
+ cursor: pointer;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+td.id{
+ width: auto;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+td.puntuacio{
+ width: auto;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+tr#titols td.id{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr#titols td.usuari{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr#titols td.puntuacio{
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color:
+}
